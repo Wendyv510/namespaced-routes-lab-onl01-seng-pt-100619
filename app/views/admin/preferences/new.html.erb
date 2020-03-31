@@ -1,0 +1,17 @@
+<%= form_for @preference, new_admin_preference_path do |f| %> 
+    <%= f.label :song_sort_order %> 
+    <%= f.text_field :song_sort_order %><br> 
+
+    <%= f.label :artist_sort_order %> 
+    <%= f.text_field :artist_sort_oder %><br> 
+
+    <%= f.label :allow_create_songs %> 
+    <%= f.check_box :allow_create_songs %><br> 
+
+    <%= f.label :allow_create_artists %> 
+    <%= f.check_box :allow_create_artists %><br> 
+
+    <%= f.submit %> 
+
+<% end %> 
+
